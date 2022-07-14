@@ -54,9 +54,9 @@ except ConnectionError:
 
 # Our HTTP Request handlers
 def led_on(environ):  # pylint: disable=unused-argument
-    global current
+    global current, current_color
     print("led on!")
-    leds.fill((0, 0, 100))
+    leds.fill(current_color)
     leds.show()
     current = None
     return ("200 OK", [], [])
