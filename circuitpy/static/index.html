@@ -1,0 +1,96 @@
+<!--
+SPDX-FileCopyrightText: 2019 ladyada for Adafruit Industries
+
+SPDX-License-Identifier: MIT
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>LED Cube Color</title>
+		<meta name="viewport" content="wdith=device-width, initial-scale=1" />
+		<style>
+			body {
+				text-align: center;
+			}
+			ul {
+				text-align: left;
+				padding: 0px;
+				padding-left: 10px;
+			}
+			li {
+				list-style: none;
+			}
+			ul.inline > li {
+				display: inline;
+			}
+			a {
+				text-decoration: none;
+				font-size: 1.5rem;
+			}
+			td.color_list {
+				text-align: left;
+				vertical-align: top;
+				width: 185px;
+			}
+		</style>
+        <script async src="led_color_picker_example.js"></script>
+    </head>
+    <body>
+        <h2>LED Cube Color</h2>
+        <canvas id="colorPicker" height="300px" width="300px"></canvas>
+		<ul class="inline">
+			<li style="margin-right: 260px;">
+				<a href="/led_on">On</a>
+			</li>
+			<li>
+				<a href="/led_off">Off</a>
+			</li>
+		</ul>
+		<hr/>
+		<table>
+			<tr>
+				<td class="color_list">
+					Solid Color
+					<ul>
+						<li>
+							<a href="/blink">Blink</a>
+						</li>
+						<li>
+							<a href="/chase">Chase</a>
+						</li>
+						<li>
+							<a href="/comet">Comet</a>
+						</li>
+						<li>
+							<a href="/colorcycle">Cycle</a>
+						</li>
+						<li>
+							<a href="/pulse">Pulse</a>
+						</li>
+						<li>
+							<a href="/solid">Solid</a>
+						</li>
+					</ul>
+				</td>
+				<td class="color_list">
+					Rainbow
+					<ul>	
+						<li>
+							<a href="/rainbowchase">Chase</a>
+						</li>
+						<li>
+							<a href="/rainbowcomet">Comet</a>
+						</li>
+						<li>
+							<a href="/rainbowsparkle">Sparkle</a>
+						</li>	
+						<li>
+							<a href="/rainbow">Solid</a>
+						</li>				
+					</ul>
+				</td>
+			</tr>
+		</table>
+    </body>
+</html>
